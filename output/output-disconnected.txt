@@ -1,0 +1,39 @@
+#START
+Distance Table of router X at t=0:
+     Y    Z
+Y    INF     INF 
+Z    INF     INF 
+Distance Table of router Y at t=0:
+     X    Z
+X    INF     INF 
+Z    INF     INF 
+Distance Table of router Z at t=0:
+     X    Y
+X    INF     INF 
+Y    INF     INF 
+
+#INITIAL
+Distance Table of router X at t=1:
+     Y    Z
+Y    INF     INF 
+Z    INF     INF 
+Distance Table of router Y at t=1:
+     X    Z
+X    INF     INF 
+Z    INF     INF 
+Distance Table of router Z at t=1:
+     X    Y
+X    INF     INF 
+Y    INF     INF 
+
+Routing Table of router X:
+Y,INF,INF
+Z,INF,INF
+
+Routing Table of router Y:
+X,INF,INF
+Z,INF,INF
+
+Routing Table of router Z:
+X,INF,INF
+Y,INF,INF

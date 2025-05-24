@@ -1,0 +1,116 @@
+#START
+Distance Table of router X at t=0:
+     Y    Z
+Y    2       INF 
+Z    INF     4   
+Distance Table of router Y at t=0:
+     X    Z
+X    2       INF 
+Z    INF     3   
+Distance Table of router Z at t=0:
+     X    Y
+X    4       INF 
+Y    INF     3   
+
+#INITIAL
+Distance Table of router X at t=1:
+     Y    Z
+Y    2       7   
+Z    5       4   
+Distance Table of router Y at t=1:
+     X    Z
+X    2       7   
+Z    6       3   
+Distance Table of router Z at t=1:
+     X    Y
+X    4       5   
+Y    6       3   
+Distance Table of router X at t=2:
+     Y    Z
+Y    2       7   
+Z    5       4   
+Distance Table of router Y at t=2:
+     X    Z
+X    2       7   
+Z    6       3   
+Distance Table of router Z at t=2:
+     X    Y
+X    4       5   
+Y    6       3   
+
+Routing Table of router X:
+Y,Y,2
+Z,Z,4
+
+Routing Table of router Y:
+X,X,2
+Z,Z,3
+
+Routing Table of router Z:
+X,X,4
+Y,Y,3
+
+#UPDATE
+Distance Table of router X at t=3:
+     Y    Z
+Y    INF     4   
+Z    INF     4   
+Distance Table of router Y at t=3:
+     X    Z
+X    INF     3   
+Z    INF     3   
+Distance Table of router Z at t=3:
+     X    Y
+X    4       3   
+Y    4       3   
+t=3 distance from Z to Y via X is INF
+Distance Table of router X at t=4:
+     Y    Z
+Y    INF     7   
+Z    INF     4   
+Distance Table of router Y at t=4:
+     X    Z
+X    INF     7   
+Z    INF     3   
+Distance Table of router Z at t=4:
+     X    Y
+X    4       INF 
+Y    INF     3   
+Distance Table of router X at t=5:
+     Y    Z
+Y    INF     7   
+Z    INF     4   
+Distance Table of router Y at t=5:
+     X    Z
+X    INF     7   
+Z    INF     3   
+Distance Table of router Z at t=5:
+     X    Y
+X    4       INF 
+Y    INF     3   
+
+#FINAL
+Distance Table of router X at t=5:
+     Y    Z
+Y    INF     7   
+Z    INF     4   
+Distance Table of router Y at t=5:
+     X    Z
+X    INF     7   
+Z    INF     3   
+Distance Table of router Z at t=5:
+     X    Y
+X    4       INF 
+Y    INF     3   
+
+Routing Table of router X:
+Y,Z,7
+Z,Z,4
+
+Routing Table of router Y:
+X,Z,7
+Z,Z,3
+
+Routing Table of router Z:
+X,X,4
+Y,Y,3

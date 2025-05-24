@@ -1,0 +1,9 @@
+#START
+Distance Table of router X at t=0:
+     
+
+#INITIAL
+Distance Table of router X at t=1:
+     
+
+Routing Table of router X:

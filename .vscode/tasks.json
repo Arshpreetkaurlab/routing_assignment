@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run All Tests",
+            "type": "shell",
+            "command": "python DistanceVector.py < input/input.txt > output/output.txt && python DistanceVector.py < input/input-update.txt > output/output-update.txt && python PoisonReverse.py < input/input-update.txt > output/output-pr.txt && python DistanceVector.py < input/test-single-node.txt > output/output-single.txt && python DistanceVector.py < input/test-disconnected.txt > output/output-disconnected.txt && python DistanceVector.py < input/test-ring.txt > output/output-ring.txt && python PoisonReverse.py < input/test-ring.txt > output/output-ring-pr.txt",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
+                },
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "label": "Compare Output",
+            "type": "shell",
+            "command": "fc output/output-update.txt input/sample_topology_expected.txt",
+            "group": "test",
+            "problemMatcher": [],
+            "options": {
+                "shell": {
+                    "executable": "cmd.exe",
+                    "args": ["/d", "/c"]
+                },
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}

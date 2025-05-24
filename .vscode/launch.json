@@ -1,0 +1,68 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DistanceVector: input.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DistanceVector.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/input.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "DistanceVector: input-update.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DistanceVector.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/input-update.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "DistanceVector: test-single-node.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DistanceVector.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/test-single-node.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "DistanceVector: test-disconnected.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DistanceVector.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/test-disconnected.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "DistanceVector: test-ring.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/DistanceVector.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/test-ring.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "PoisonReverse: input-update.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/PoisonReverse.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/input-update.txt"],
+            "redirectOutput": true
+        },
+        {
+            "name": "PoisonReverse: test-ring.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/PoisonReverse.py",
+            "console": "integratedTerminal",
+            "args": ["<", "${workspaceFolder}/input/test-ring.txt"],
+            "redirectOutput": true
+        }
+    ]
+}

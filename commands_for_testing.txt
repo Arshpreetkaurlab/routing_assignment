@@ -1,0 +1,20 @@
+python DistanceVector.py < input/input.txt > output/output.txt
+python DistanceVector.py < input/input-update.txt > output/output-update.txt
+python PoisonReverse.py < input/input-update.txt > output/output-pr.txt
+python DistanceVector.py < input/test-single-node.txt > output/output-single.txt
+python DistanceVector.py < input/test-disconnected.txt > output/output-disconnected.txt
+python DistanceVector.py < input/test-ring.txt > output/output-ring.txt
+python PoisonReverse.py < input/test-ring.txt > output/output-ring-pr.txt
+
+
+fc output\output-update.txt input\sample_topology_expected.txt
+
+
+fc output\output.txt output\output.txt
+fc output\output-single.txt output\output-single.txt
+fc output\output-disconnected.txt output\output-disconnected.txt
+fc output\output-ring.txt output\output-ring.txt
+
+
+type output\output-pr.txt
+
